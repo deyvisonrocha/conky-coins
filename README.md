@@ -1,6 +1,8 @@
 # conky-coins
 Widget to follow BTC and XRB price.
 
+![screenshot from 2017-12-27 02 08 21](https://user-images.githubusercontent.com/686067/34371327-fa92e5c2-eaaa-11e7-8af0-342697caf68e.png)
+
 ## Description
 
 Soon...

@@ -1,4 +1,3 @@
-import urllib
 import requests
 import babel.numbers, decimal
 

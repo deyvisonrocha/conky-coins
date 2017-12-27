@@ -1,0 +1,40 @@
+conky.config = {
+    alignment = 'top_right',
+    background = false,
+    border_width = 0,
+    default_color = '#FFF',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'OpenSans:size=14',
+    gap_x = 0,
+    gap_y = 34,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    override_utf8_locale = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_transparent = true,
+    own_window_type = 'desktop',
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_xft = true,
+    color1 = 'ffc851',
+    color2 = '6ccef5',
+    color3 = 'b0b1b2'
+}
+
+conky.text = [[
+${image bitcoin.png -p 5,5 -s 18x18}${goto 30}${font OpenSans:size=14}${color1}Bitcoin${font OpenSans:size=8}${color3} (BTC)${color}${goto 220}${font OpenSans:size=8}Rank:${execi 10 sed '4q;d' bitcoin.txt}
+${font OpenSans:size=18}${execi 10 sed '1q;d' bitcoin.txt}${font OpenSans:size=12} USD ${goto 200}(${execi 10 sed '2q;d' bitcoin.txt})${font}${color}
+${font OpenSans:size=18}${execi 10 sed '3q;d' bitcoin.txt}${font}
+${image raiblocks.png -p 5,95 -s 18x18}${goto 30}${color2}RaiBlocks${font OpenSans:size=8}${color3} (XRB)${color}${goto 215}${font OpenSans:size=8}Rank:${execi 10 sed '5q;d' raiblocks.txt}
+${font OpenSans:size=18}${execi 10 sed '1q;d' raiblocks.txt}${font OpenSans:size=12} USD  ${goto 200}(${execi 10 sed '2q;d' raiblocks.txt})
+${color1}${font OpenSans:size=12}${execi 10 sed '3q;d' raiblocks.txt}${font OpenSans:size=12} BTC${font}${color}
+${font OpenSans:size=18}${execi 10 sed '4q;d' raiblocks.txt}
+]]

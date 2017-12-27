@@ -7,6 +7,13 @@ Widget to follow BTC and XRB price.
 
 Soon...
 
+## How to run
+
+1. Configure crontab with this line:
+ ```
+ * * * * * sh /home/<your-user>/.conky/Rocks/portfolio.sh
+ ```
+
 ## Requirements
 
 * Python >= 2.7.12

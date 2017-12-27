@@ -5,6 +5,12 @@ Widget to follow BTC and XRB price.
 
 Soon...
 
+## Requirements
+
+* Python >= 2.7.12
+  * Babel >= 2.5.1) (install with pip)
+* Conky >= 1.10.1
+
 ## Contributing
 
 [See this gist](https://gist.github.com/PurpleBooth/b24679402957c63ec426)
